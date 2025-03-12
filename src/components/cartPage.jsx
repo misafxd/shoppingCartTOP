@@ -13,7 +13,7 @@ const CartPage = () => {
       <h1>Cart</h1>
       <div className="cartPage-container">
         <section className="cart-products-container">
-          {cartProducts &&
+          {cartProducts.length > 0 ? (
             cartProducts.map((product) => (
               <CartProduct
                 key={product.id}
@@ -24,7 +24,10 @@ const CartPage = () => {
                 description={product.description}
                 quantity={product.quantity}
               />
-            ))}
+            ))
+          ) : (
+            <h2>Your Cart is empty!!</h2>
+          )}
         </section>
         <section className="payment-details">
           <ul>
