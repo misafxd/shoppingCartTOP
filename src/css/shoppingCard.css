@@ -1,0 +1,153 @@
+.card {
+  background-image: linear-gradient(to bottom, white 35%, black);
+  aspect-ratio: 3 / 4;
+  border-radius: 1rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.product-image {
+  margin-top: auto;
+  mix-blend-mode: darken;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.2) rotate(-5deg);
+  }
+}
+
+.card-footer {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  margin-top: auto;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  height: 45%;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-block: 0.5rem;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.description {
+  font-size: 0.7rem;
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: 0.25rem;
+}
+
+.description,
+.product-name {
+  display: -webkit-box;
+  -webkit-box-orient: block-axis;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.action p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.add-subs {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.add-subs button {
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  padding: 0.3em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #121111;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  flex: 0 0 auto;
+}
+
+.add-subs button:hover {
+  background-color: #1a1a1a;
+}
+
+.quantity {
+  background-color: #121111;
+  border-radius: 0;
+  padding: 0;
+}
+
+.add-subs button.btn-quantity-minus {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.add-subs button.btn-quantity-plus {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.add-cart-btn {
+  padding-inline: 1rem;
+}
+
+.add-subs input {
+  width: 2.5rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  flex: 0 0 auto;
+}
+
+.add-cart-btn {
+  background-color: #121111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.add-cart-btn:hover {
+  background-color: #333;
+}
+
+.add-cart-btn:active,
+.add-subs button:active {
+  transform: scale(0.98);
+}
+
+.add-cart-btn svg {
+  padding: auto;
+  margin: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
