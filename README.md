@@ -1,12 +1,29 @@
-# React + Vite
+# Shopping Cart Project 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Captura de pantalla 2025-03-12 172502](https://github.com/user-attachments/assets/901e4253-4551-4170-8d8d-9d85e253e9b4)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+1. Clone this repository:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   ```bash
+   git clone https://github.com/misafxd/shoppingCartTOP.git
+   ```
+2. Navigate to the project directory:
+
+   ```bash
+   cd <shoppingCartTOP>
+    ```
+
+3. Install the dependencies:
+
+    ```bash
+   npm install
+    ```
+4. Build the project:
+
+    ```bash
+     npm run build
+    ```
+After completing these steps, the project will be ready to use.
